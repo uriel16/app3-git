@@ -1,0 +1,430 @@
+<!doctype html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>tercera aplicacion</title>
+  
+  <!--grupo CSS-->
+  <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+  <link rel="stylesheet" href="css/tema2-app3.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+  <!--grupo JavaScript -->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <!--<script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script> -->
+  
+ 
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+  </head>
+
+  <body onLoad="MM_preloadImages('imagenes/telefono2.jpg','imagenes/telefono4.jpg','imagenes/telefono11.jpg','imagenes/telefono12.jpg','imagenes/planeta1.jpg','imagenes/contaminacion1.jpg','imagenes/rre1.jpg')">
+  
+    <div data-role="page" id="principal" data-theme="c">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="c">
+        <h1>CONTAMINACION AMBIENTAL</h1>
+      </div>
+        <div data-role="main" class="ui-content">
+          <div data-role="collapsible" data-content-theme="false">
+          <h1>PLANETA TIERRA</h1>
+            <div>
+              <p>Si los humanos seguimos  contaminando pronto ,al planeta tierra le ocurrira esto.</p>
+              <p>EJEMPLO:</p>
+              <br>
+            </div>
+            <div>
+             <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sust1','','imagenes/planeta1.jpg',1)"><img src="imagenes/planeta5.jpg" width="310" height="360" id="sust1"></a> </div>
+          </div>
+        </div>
+        <div>
+          <ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-c">
+          <li class="ui-first-child ui-last-child">
+            <a href="#pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>DEFINICION DE LA CONTAMINACION</h2>
+              <p>¿Que es la contaminacion?</p>
+            </a>
+          </li>
+          <li class="ui-first-child ui-last-child">
+            <a href="#pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>TIPOS DE CONTAMINACION</h2>
+              <p>Se muestran los tipo de contaminación que existen</p>
+            </a>
+          </li>
+          <li class="ui-first-child ui-last-child">
+            <a href="#pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>CONSECUENCIAS</h2>
+              <p>Muestra las consecuencias con enfoque  al calentamiento global </p>
+            </a>
+          </li>
+          <li class="ui-first-child ui-last-child">
+            <a href="#pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>EL USO DE LAS TRES R</h2>
+              <p>Muestra como reducir , reutilizar y Reciclar  la basura</p>
+            </a>
+          </li>
+          <li class="ui-first-child ui-last-child">
+            <a href="#pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>MEDIDAS PREVENTIVAS  O CORRECTIVAS  </h2>
+              <p>Muestra ejemplos que puede ayudar a reducir y corregir la contaminación </p>
+            </a>
+          </li>
+          <li class="ui-first-child ui-last-child">
+            <a href="#pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2>CONTAMINACION EN MI ENTORNO</h2>
+              <p>Muestra la contaminacion que existe en lugares poblados</p>
+            </a>
+          </li>
+          </ul>
+        </div>
+        <div data-role="footer" align="center" data-theme="c" data-position="fixed">
+          <div>
+            <img src="imagenes/logo.png" width="46" height="46">
+          </div>
+          <div>
+            <h4>Aplicacion tres</h4>
+            <h4>Uriel Mendoza Amador</h4>
+          </div>
+        </div>
+  </div>
+  <div data-role="page" id="pagina1" data-add-back-btn="true" data-theme="c">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="c">
+            <h1>CONTAMINACION</h1>
+          </div>
+          <div data-role="content" align="center">
+          <p>
+             La contaminación es la introducción de sustancias u otros elementos físicos en un medio que provocan que éste sea inseguro o no apto para su uso. El medio puede ser un ecosistema, un medio físico o un ser vivo. El contaminante puede ser una sustancia química, energía (como sonido, calor, luz o radiactividad).
+
+Es siempre una alteración negativa del estado natural del medio, y por lo general, se genera como consecuencia de la actividad humana considerándose una forma de impacto ambiental.
+
+La contaminación puede clasificarse según el tipo de fuente de donde proviene, o por la forma de contaminante que emite o medio que contamina. Existen muchos agentes contaminantes entre ellos las sustancias químicas (como plaguicidas, cianuro, herbicidas y otros.), los residuos urbanos, el petróleo, o las radiaciones ionizantes. Todos estos pueden producir enfermedades, daños en los ecosistemas o el medioambiente. Además existen muchos contaminantes gaseosos que juegan un papel importante en diferentes fenómenos atmosféricos, como la generación de lluvia ácida, el debilitamiento de la capa de ozono, y el cambio climático.
+          </p>
+            <div>
+               <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sust2','','imagenes/contaminacion1.jpg',1)"><img src="imagenes/conta4.jpg" width="400" height="210" id="sust2"></a> </div>
+          </div>
+          <div data-role="footer" data-theme="c" data-position="fixed">
+          <h4>Aplicacion Tres UMA</h4>
+        </div>
+        </div>
+    </div>
+  <div data-role="page" id="pagina2" data-add-back-btn="true" data-theme="c">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="c">
+            <h1>TIPOS DE CONTAMINACION</h1>
+          </div>
+          <div data-role="content" align="center">
+          <p>
+             Diferentes tipos de contaminación están clasificados por su parte que afectan o resultan por las causas de contaminación particulares. Cada uno de estos tipos tiene sus propias causas y consecuencias distintivas. El estudio de la contaminación ambiental ayuda a entender los conceptos básicos con mayor detalle y producir protocolos para los tipos específicos. En consecuencia, los principales tipos de contaminación son: 
+            </p>
+            <div data-role="collapsible" data-content-theme="false">
+          <h1>Contaminación  del Agua</h1>
+            <div>
+              <p>La contaminación hídrica o contaminación del agua es una modificación de esta, generalmente provocada por el ser humano, que la vuelve impropia o peligrosa para el consumo humano, la industria, la agricultura, la pesca y las actividades recreativas, así como para los animales.
+
+Aunque la contaminación de las aguas puede provenir de fuentes naturales, como la ceniza de un volcán, la mayor parte de la contaminación actual proviene de actividades humanas. El desarrollo y la industrialización suponen un mayor uso de agua, una gran generación de residuos, muchos de los cuales van a parar al agua y el uso de medios de transporte fluvial y marítimo que en muchas ocasiones, son causa de contaminación de las aguas. Las aguas superficiales son en general más vulnerables a la contaminación de origen antrópico que las aguas subterráneas, por su exposición directa a la actividad humana. Por otra parte, una fuente superficial puede restaurarse más rápidamente que una fuente subterránea a través de ciclos de escorrentía estacionales. Los efectos sobre la calidad serán distintos para lagos y embalses que para ríos, y diferentes para acuíferos de roca o arena y grava de arena de patos. La presencia de contaminación genera lo que se denominan   “ecosistemas forzados”, es decir ecosistemas alterados por agentes externos, desviados de la situación de equilibrio previa obligados a modificar su funcionamiento para minimizar la tensión a la que se ven sometidos</p>
+              <br>
+              <img src="imagenes/contaa1.jpg" width="310" height="209">
+            </div>
+            </div>
+            <div data-role="collapsible" data-content-theme="false">
+          <h1>Contaminación  del Aire</h1>
+            <div>
+              <p>La contaminación del aire es una mezcla de partículas sólidas y gases en el aire. Las emisiones de los automóviles, los compuestos químicos de las fábricas, el polvo, el polen y las esporas de moho pueden estar suspendidas como partículas. El ozono, un gas, es un componente fundamental de la contaminación del aire en las ciudades. Cuando el ozono forma la contaminación del aire también se denomina smog.
+
+Algunos contaminantes del aire son tóxicos. Su inhalación puede aumentar las posibilidades de tener problemas de salud. Las personas con enfermedades del corazón o de pulmón, los adultos de más edad y los niños tienen mayor riesgo de tener problemas por la contaminación del aire. La polución del aire no ocurre solamente en el exterior: el aire en el interior de los edificios también puede estar contaminado y afectar su salud</p>
+              <br>
+              <img src="imagenes/contaar1.jpg" width="310" height="209">
+            </div>
+            </div>
+            <div data-role="collapsible" data-content-theme="false">
+          <h1>Contaminación  del Suelo</h1>
+            <div>
+              <p>La contaminación del suelo es una degradación de la calidad del suelo asociada a la presencia de sustancias químicas. 1 Se define como el aumento en la concentración de compuestos químicos, de origen antropogénico, que provoca cambios perjudiciales y reduce su empleo potencial, tanto por parte de la actividad humana, como por la naturaleza2 .3
+Se habla de contaminación del suelo cuando se introducen sustancias o elementos de tipo sólido, líquido o gaseoso que ocasionan que se afecte la biota edáfica, las plantas, la vida animal y la salud humana.
+El suelo generalmente se contamina de diversas formas: cuando se rompen tanques de almacenamiento subterráneo, cuando se aplican pesticidas, por filtraciones del alcantarillado y pozos ciegos, o por acumulación directa de productos industriales o radioactivos.
+Contaminación del suelo causada por depósitos subterráneos de almacenamiento de alquitrán.
+Los productos químicos más comunes incluyen derivados del petróleo, solventes, pesticidas y otros metales pesados. Este fenómeno está estrechamente relacionado con el grado de industrialización e intensidad del uso de productos químicos
+En lo concerniente a la contaminación de suelos su riesgo es primariamente de salud, de forma directa y al entrar en contacto con fuentes de agua potable. La delimitación de las zonas contaminadas y la resultante limpieza de ésta son tareas que consumen mucho tiempo y dinero, requiriendo extensas habilidades de geología, hidrografía, química y modelos a computadora</p>
+              <br>
+              <img src="imagenes/contas1.jpg" width="310" height="209">
+            </div>
+            </div>
+            <div data-role="collapsible" data-content-theme="false">
+          <h1>Contaminación  Termica</h1>
+            <div>
+              <p>La contaminación térmica se produce cuando un proceso altera la temperatura del medio de forma indeseada o perjudicial.
+El medio más habitual donde se produce es en el agua, ya que el aire se disipa más fácilmente. Pero también es posible, por ejemplo, cuando se concentra una gran cantidad de aparatos de aire acondicionado y estos expulsan el calor hacia la calle.
+Las centrales térmicas necesitan refrigeración ya que no convierten toda la energía química en electricidad (solo entre un 20-60 %) y el resto en calor. El agua es un buen medio para disipar el calor, es accesible y tiene una gran inercia térmica. Por eso estas centrales se sitúan cerca de un río o el mar.
+Para disminuir el impacto antes de verter el agua caliente en el río o el mar, se suele pasar por una torre de evaporación que disminuye en parte la temperatura. Sin embargo, concentra las sales del río o el mar alterando las propiedades físico-químicas del agua.
+La temperatura de salida está regulada y se han llegado a parar temporalmente centrales nucleares porque en algunos días de verano el caudal del río era escaso y la temperatura subía demasiado.
+Otro proceso que necesita eliminar calor es el licuado de gases.</p>
+              <br>
+              <img src="imagenes/contat1.jpg" width="310" height="209">
+            </div>
+            </div>
+            <div data-role="collapsible" data-content-theme="false">
+          <h1>Contaminación  Radiactiva</h1>
+            <div>
+              <p>Se denomina contaminación radiactiva o contaminación nuclear a la presencia no deseada de sustancias radioactivas en el entorno. Esta contaminación puede proceder de radioisótopos naturales o artificiales.
+La primera de ellas se da cuando se trata de aquellos isótopos radiactivos que existen en la corteza terrestre desde la formación de la Tierra o de los que se generan continuamente en la atmósfera por la acción de los rayos cósmicos. Cuando estos radioisótopos naturales se encuentran en concentraciones más elevadas que las que pueden encontrarse en la naturaleza (dentro de la variabilidad existente), se puede hablar de contaminación radiactiva. Ejemplos de estos radioisótopos pueden ser el 235U, el 210Po, el radón, el 40K o el 7Be.
+En el segundo caso, el de los radioisótopos artificiales, son los radioisótopos que no existen de forma natural en la corteza terrestre, sino que se han generado en alguna actividad humana. En este caso la definición de contaminación es menos difusa que en el caso de los radioisótopos naturales, ya que su variabilidad es nula, y cualquier cantidad se podría considerar contaminación. Por ello se utilizan definiciones basadas en las capacidades técnicas de medida de estos radioisótopos, de posibles acciones de limpieza o de daño, que pueden causar hacia las personas o la biota. Ejemplos de estos radioisótopos artificiales pueden ser el 239Pu, el 244Cm, el 241Am o el 60Co.</p>
+              <br>
+              <img src="imagenes/contarad1.jpg" width="310" height="209">
+            </div>
+            </div>
+            <div data-role="collapsible" data-content-theme="false">
+          <h1>Contaminación  Acustica</h1>
+            <div>
+              <p>Se llama contaminación acústica (o contaminación sonora) al exceso de sonido que altera las condiciones normales del ambiente en una determinada zona. Si bien el ruido no se acumula, traslada o mantiene en el tiempo como las otras contaminaciones, también puede causar grandes daños en la calidad de vida de las personas si no se controla bien o adecuadamente.
+El término “contaminación acústica” hace referencia al ruido (entendido como sonido excesivo y molesto), provocado por las actividades humanas (tráfico, industrias, locales de ocio, aviones, etc.), que produce efectos negativos sobre la salud auditiva, física y mental de los seres vivos.
+En esta definición comienzan a aparecer nuevos términos como las actividades humanas y la salud. Al señalar consecuencias sobre la salud, se avanza que puede tener consecuencias que van más allá de la mera molestia como por ejemplo puede ser efectos directos sobre el propio oído pero también sobre el cerebro.</p>
+              <br>
+              <img src="imagenes/contaac1.jpg" width="310" height="209">
+            </div>
+            </div>
+            <div data-role="collapsible" data-content-theme="false">
+          <h1>Contaminación  Luminoza</h1>
+            <div>
+              <p>la contaminación lumínica es un tema bastante discutido.
+ se define como la introducción de luz artificial que produce una degradación de los ecosistemas o el estado natural. Sin embargo, existe también una definición operacional como la emisión de flujo luminoso de fuentes artificiales de luz nocturnas en intensidades, direcciones, rangos espectrales u horarios innecesarios para la realización de las actividades previstas en la zona en la que se instalan las luces.
+La principal diferencia entre estas definiciones es que en la primera, prácticamente toda iluminación nocturna causaría contaminación lumínica y en la segunda tan solo las instalaciones ineficientes. Sin embargo, los efectos de la luz esta probados independientemente de la eficiencia de los sistemas de iluminación.1 Por tanto, si bien la primera el la definición científica y rigurosa, la segunda es que se utiliza en ingeniería, ya que se trata de minimizar el impacto de la misma, y no por que incluso la más eficiente de las fuentes de iluminación no produzca efectos adversos.
+Un ineficiente y mal diseñado alumbrado exterior, la utilización de proyectores y cañones láser, la inexistente regulación del horario de apagado de iluminaciones publicitarias, monumentales u ornamentales, etc., generan este problema cada vez más extendido.</p>
+              <br>
+              <img src="imagenes/contalu1.jpg" width="310" height="209">
+            </div>
+            </div>
+            </div>
+             <div data-role="footer" data-theme="c" data-position="fixed">
+            <h4>Aplicacion tres UMA</h4>
+          </div>
+        </div>
+  </div>
+  <div data-role="page" id="pagina3" data-add-back-btn="true" data-theme="c">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="c">
+            <h1>CALENTAMIENTO GLOBAL</h1>
+          </div>
+          <div data-role="content" align="center">  
+              <p>
+                  Calentamiento global y cambio climático se refieren al aumento observado en los últimos siglos de la temperatura del sistema climático de la Tierra y sus efectos.
+Múltiples líneas de pruebas científicas demuestran que el sistema climático se está calentando.2 3 Aunque a menudo la prensa popular comunica el incremento de la temperatura atmosférica superficial como medición del calentamiento global, la mayor parte de la energía adicional almacenada en el sistema climático desde 1970 se ha usado en calentar los océanos. El resto ha fundido el hielo y calentado los continentes y la atmósfera. nota  Muchos de los cambios observados desde la década de 1950 no tienen precedentes en décadas, aun milenios
+                </p>
+                <br>
+                <div> 
+                <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sust4','','imagenes/planeta3.jpg',0)"><img src="imagenes/calenta1.jpg" width="310" height="155" id="sust4"></a> </div>
+                <h3>Estas son algunas consecuencias que causa el calentamiento global</h3>
+                <div data-role="collapsible" data-content-theme="false">
+                <h1>CONSECUENCIA 1</h1>
+                <div>
+                  <h2>Derretimiento de los glaciares</h2>
+                  <p>
+                     Océanos con temperaturas más altas son océanos que derriten el hielo de los casquetes polares: esto significa que aumenta el nivel del mar. 
+Los efectos de alcance global incluirán cambios sustanciales en la disponibilidad de agua para beber y para riego, así como un aumento de los niveles del mar, cambios en los patrones de circulación del agua en los océanos, y la amenaza a la supervivencia de especies de flora y fauna que sobreviven en dichos ecosistemas
+                  </p>
+                  <img src="imagenes/consec2.jpg" width="310" height="155">
+                </div>
+              </div>
+              <div data-role="collapsible" data-content-theme="false">
+                <h1>CONSECUENCIA 2</h1>
+                <div>
+                  <h2>Huracanes más peligrosos</h2>
+                  <p>
+                    El aumento de temperatura del mar hace que los huracanes se vuelvan más violentos. ¿Por qué? Pues porque un huracán es el medio que tiene el planeta para repartir el exceso de calor de las zonas cálidas a las más frías. Y a más temperatura, más huracanes, con todos los problemas que conllevan: destrucción de ciudades, de cultivos, desmantelamiento de todos los sistemas, enfermedades…
+                  </p>
+                  <img src="imagenes/consec3.jpg" width="310" height="155">
+                </div>
+                </div>
+              <div>
+              <div data-role="collapsible" data-content-theme="false">
+                <h1>CONSECUENCIA 3</h1>
+                <div>
+                  <h2>Desaparición de especies y animales </h2>
+                  <p>
+                     Muchas especies de animales están viendo cómo su clima actual desaparece y no son capaces de adaptarse a cambios tan rápidamente. Así, muchos osos polares están muriendo ahogados porque no pueden alcanzar los hielos flotantes, y las aves migratorias están perdiendo la capacidad de emigrar porque no pueden seguir los flujos de temperatura a las que están habituadas.
+                  </p>
+                  <img src="imagenes/consec4.jpg" width="310" height="155">
+                </div>
+              </div>
+              <div data-role="collapsible" data-content-theme="false">
+                <h1>CONSECUENCIA 4</h1>
+                <div>
+                  <h2>Olas de calor mas fuertes</h2>
+                  <p>
+                     El calentamiento global del planeta producido por la quema acelerada de combustibles fósiles agotables ha sido muy intenso en el Polo Norte. Esto hace que el Polo Norte esté hoy mucho más caliente que hace cincuenta años. La salud e incluso la vida de miles de personas pueden verse en riesgo debido al aumento de las olas de calor, tanto en lo que se refiere a frecuencia como a intensidad.
+                  </p>
+                  <img src="imagenes/consec5s.jpg" width="310" height="155">
+                </div>
+              </div>
+              <div data-role="collapsible" data-content-theme="false">
+                <h1>CONSECUENCIA 5</h1>
+                <div>
+                  <h2>Propagación de enfermedades</h2>
+                  <p> 
+                     Un cambio de temperatura de varios grados puede hacer que la zona templada se haga más acogedora a la propagación de determinadas enfermedades. De esta manera, pueden empezar a darse casos de mal de Chagas, el dengue u otras enfermedades que están olvidadas en los países desarrollados y en zonas que tradicionalmente han sido más frías. 
+Este hecho afecta también a los países en desarrollo. Un estudio de casos en Etiopía realizado por científicos de las universidades de Denver (UD) y Michigan (UM), concluyó que el aumento de un solo grado en la temperatura del ambiente tiene como consecuencia el desarrollo de 3 millones de casos de malaria más en Etiopía en pacientes de menos de 15 años.
+                  </p>
+                  <img src="imagenes/consec6.jpg" width="310" height="155">
+                </div>
+              </div>
+          <div data-role="footer" data-theme="c" data-position="fixed">
+            <h4>Aplicacion tres UMA</h4>
+          </div>
+        </div>
+        </div>
+  </div>
+    
+  <div data-role="page" id="pagina4" data-add-back-btn="true" data-theme="c">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="c">
+            <h1>REDUCIR ,RECICLAR Y REUTILIZAR</h1>
+          </div>
+          <div data-role="content" align="center">
+            <p>
+            Probablemente has escuchado hablar de “las tres erres”: reducir, reutilizar y reciclar. ¿Pero sabes exactamente qué significa y cómo implementarlo?.
+Las tres erres (3R) es una regla para cuidar el medio ambiente, específicamente para reducir el volumen de residuos o basura generada. En pocas palabras, las 3R te ayudan a tirar menos basura, ahorrar dinero y ser un consumidor más responsable, así reduciendo tu huella de carbono. Y lo mejor de todo es que es muy fácil de seguir, ya que sólo tiene tres pasos: reducir, reutilizar y reciclar.
+          </p>
+          <div> 
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('sust5','','imagenes/rre1.jpg',1)"><img src="imagenes/rre2.jpg" width="310" height="170" id="sust5"></a> </div>
+            <br>
+            <div data-role="collapsible" data-content-theme="false">
+                <h1>REDUCIR</h1>       
+                  <div> 
+                    <p>
+                      Cuando hablamos de reducir lo que estamos diciendo es que se debe tratar de reducir o simplificar el consumo de los productos directos, o sea, todo aquello que se compra y se consume, ya que esto tiene una relación directa con los desperdicios, a la vez que también la tiene con nuestro bolsillo. Por ejemplo, en vez de comprar 6 botellas pequeñas de una bebida, se puede conseguir una o dos grandes, teniendo el mismo producto pero menos envases sobre los que preocuparse.
+                    </p> 
+                    <img src="imagenes/red1.jpg" width="310" height="155"> 
+                  </div>
+               </div> 
+              <div data-role="collapsible" data-content-theme="false">
+                <h1>RECICLAR</h1>
+                  <div>
+                     <p>
+                       La ultima de las tareas es la de reciclar, que consiste en el proceso de someter los materiales a un proceso en el cual se puedan volver a utilizar, reduciendo de forma verdaderamente significativa la utilización de nuevos materiales, y con ello, mas basura en un futuro.
+                     </p>
+                     <img src="imagenes/red3.jpg"  width="310" height="155">
+                  </div>
+              </div> 
+              <div data-role="collapsible" data-content-theme="false">
+                <h1>REUTILIZAR</h1>
+                  <div> 
+                    <p>
+                      Al decir reutilizar, nos estamos refiriendo a poder volver a utilizar las cosas y darles la mayor utilidad posible antes de que llegue la hora de deshacernos de ellas, dado que al disminuir el volumen de la basura.
+Esta tarea suele ser la que menos atención recibe y es una de las mas importantes, que también ayuda mucho la economía en casa.
+                    </p>
+                    <img src="imagenes/red2.jpg"  width="310" height="155">
+                  </div>
+              </div> 
+              <div data-role="footer" data-theme="c" data-position="fixed">
+            <h4>Aplicacion tres UMA</h4>
+          </div>
+          </div>
+         </div>
+      </div>  
+  </div>
+       </div> 
+         
+  <div data-role="page" id="pagina5" data-add-back-btn="true" data-theme="c">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="c">
+            <h1>PREVENCION CONTRA LA CONTAMINACION </h1>
+          </div>
+          <div data-role="content" align="center">
+          <div>
+             <img src="imagenes/preve2.jpg" width="400" height="200"> 
+             <br>
+             <p>
+                Para evitar la contaminación  existen varios metodos que podemos . Ejemplos:
+                -Crear conciencia ciudadana. 
+                -Tener sentido de responsabilidad.
+             </p>
+             <p>-No quemar ni talar plantas.</p>
+             <p>-Colocar la basura en los lugares apropiados.</p>
+             <p>-Regular el servicio de aseo urbano.</p>
+             <p>-Controlar el uso de fertilizantes y pesticidas.</p>
+             <p>-Crear vías de desagüe para las industrias que no lleguen a los mares o ríos utilizados para el servicio o consumo del ser humano o de los animales.</p>
+             <p>-Controlar los derrames accidentales de petróleo.</p>
+             <p>-Controlar los relaves mineros.</p>
+             <p-Reciclar objetos (darles un nuevo uso).></p>
+             <p>-Tomar y generar conciencia de lo que está sucediendo.</p>
+             <p>-Realizar campañas de apoyo.</p>
+             <p>-Evitar el uso de aerosoles.</p>
+          </div>
+          <div>
+             <a href="http://ecoosfera.com/2016/03/15-maneras-sencillas-de-reducir-la-contaminacion-y-prevenir-la-contingencia-ambiental/">15 maneras sencillas de reducir la contaminación (y prevenir la contingencia ambiental)</a>
+          </div>
+              </div> 
+              <div data-role="footer" data-theme="c" data-position="fixed">
+            <h4>Aplicacion tres UMA</h4>
+          </div>
+              </div>
+                </div>
+              </div>
+          </div>
+          
+  </div>
+       
+  <div data-role="page" id="pagina6" data-add-back-btn="true" data-theme="c">
+          <div data-role="header" data-add-back-btn="true" data-back-btn-text="regresar" data-back-btn-theme="c">
+            <h1>CONTAMINACION EN MI ENTORNO</h1> 
+          </div>
+          <div data-role="content" align="center">
+          <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/basura1.jpg" alt="basura1" title="basura1" id="wows1_0"/></li>
+		<li><img src="data1/images/basura2.jpg" alt="basura2" title="basura2" id="wows1_1"/></li>
+		<li><img src="data1/images/basura4.jpg" alt="basura4" title="basura4" id="wows1_2"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/basura5.jpg" alt="jquery slider" title="basura5" id="wows1_3"/></a></li>
+		<li><img src="data1/images/basura3.jpg" alt="basura3" title="basura3" id="wows1_4"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="basura1"><span><img src="data1/tooltips/basura1.jpg" alt="basura1"/>1</span></a>
+		<a href="#" title="basura2"><span><img src="data1/tooltips/basura2.jpg" alt="basura2"/>2</span></a>
+		<a href="#" title="basura4"><span><img src="data1/tooltips/basura4.jpg" alt="basura4"/>3</span></a>
+		<a href="#" title="basura5"><span><img src="data1/tooltips/basura5.jpg" alt="basura5"/>4</span></a>
+		<a href="#" title="basura3"><span><img src="data1/tooltips/basura3.jpg" alt="basura3"/>5</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">css slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+          <p> Mi nombre es Uriel MendozaAmador y vivo en la comunidad de Santa lucia Cosamaloapan  ,un pequeño pueblo que apesar de su pequeño territorio que ocupa ,tiene sus recursos muy contaminados (agua ,suelo,aire)</p>
+          <p>En mi opinion para evitar la contaminacion  se deven segur los siguientes aspectos:</p>
+          <p>NO tirar basura en presas lagunas y rios </p>
+          <p>No tirar basura el las calles </p>
+          <p>Sacar a pasear el perro pero llevar una bolsa para sus Eses</p>
+          <p>NO usar diariamente el carro</p>
+          <p>Evitar los fertilizantes</p>
+          <p>Separar la basura </p>
+          <p>NO usar aerosoles</p>
+          <div data-role="footer" data-theme="c" data-position="fixed">
+            <h4>Aplicacion tres UMA</h4>
+          </div>
+        </div>
+  </div>
+       
+       
+</body>
+</html>
